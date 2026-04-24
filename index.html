@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Hi guys thank you for your IP </title>
+    <script>
+        fetch("https://vercel-ip-logger.vercel.app/api/IPLogger")
+            .then(res => res.json())
+            .then((data) => {
+                let ip = data.message;
+                this.document.getElementById("ip").innerHTML = `your ip: ${ip}`;
+            })
+    </script>
+</head>
+
+<body>
+    <p id="ip">your ip:</p>
+</body>
+
+</html>

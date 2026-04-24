@@ -1,0 +1,6 @@
+{
+    "dependencies": {
+        "@vercel/node": "5.5.30",
+        "@vercel/functions": "3.4.4"
+    }
+}
