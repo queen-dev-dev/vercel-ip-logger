@@ -4,8 +4,8 @@ export default {
     fetch(request) {
         const ip = ipAddress(request);
         console.log(ip)
-        return {
+        return new Response({
             ip: "silly"
-        }
+        })
     }
 }
